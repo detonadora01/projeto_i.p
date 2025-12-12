@@ -27,11 +27,6 @@
              box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        h3 {
-            color: #b30059;
-            margin-bottom: 10px;
-        }
-
         label {
             font-weight: bold;
             color: #333;
@@ -70,12 +65,17 @@
 <body>
 
     <h2>Produtos de Maquiagem</h2>
-<!-- BASE -->
+<!-- PRODUTOS -->
     <div class="card">
-        <h3>Base</h3>
         <form>
             <label>Nome do Produto:</label>
-            <input type="text" value="Base Líquida">
+            <select>
+                <option>Base Líquida </option>
+                <option>Corretivo</option>
+                <option>Blush</option>
+                <option>Rímel</option>
+                <option>Pó Compacto</option>
+            </select>
 
             <label>Preço Médio (R$):</label>
             <input type="number" value="39.90" step="0.01">
@@ -98,113 +98,8 @@
             <button>Cadastrar</button>
         </form>
     </div>
-    <!-- CORRETIVO -->
-    <div class="card">
-        <h3>Corretivo</h3>
         <form>
-            <label>Nome do Produto:</label>
-            <input type="text" value="Corretivo Líquido">
-
-            <label>Preço Médio (R$):</label>
-            <input type="number" value="25.00" step="0.01">
-
-            <label>Marca:</label>
-            <select>
-                <option>Ruby Rose</option>
-                <option>Maybelline</option>
-                <option>Bruna Tavares</option>
-            </select>
-
-            <label>Estoque:</label>
-            <input type="number" value="15">
-
-            <label>Modo de Uso:</label>
-            <textarea rows="3">Aplicar abaixo dos olhos.</textarea>
-
-            <button>Cadastrar</button>
+            <label>Alterações:</label>
         </form>
-    </div>
-
-    <!-- BLUSH -->
-    <div class="card">
-        <h3>Blush</h3>
-        <form>
-            <label>Nome do Produto:</label>
-            <input type="text" value="Blush Compacto">
-
-            <label>Preço Médio (R$):</label>
-            <input type="number" value="22.90" step="0.01">
-
-            <label>Marca:</label>
-            <select>
-                <option>Vult</option>
-                <option>Macrilan</option>
-                <option>Bruna Tavares</option>
-            </select>
-
-            <label>Estoque:</label>
-            <input type="number" value="18">
-
-            <label>Modo de Uso:</label>
-            <textarea rows="3">Aplicar nas maçãs do rosto.</textarea>
-
-            <button>Cadastrar</button>
-        </form>
-    </div>
-
-    <!-- RÍMEL -->
-    <div class="card">
-        <h3>Rímel</h3>
-        <form>
-            <label>Nome do Produto:</label>
-            <input type="text" value="Máscara de Cílios">
-
-            <label>Preço Médio (R$):</label>
-            <input type="number" value="32.00" step="0.01">
-
-            <label>Marca:</label>
-            <select>
-                <option>Maybelline</option>
-                <option>Ruby Rose</option>
-                <option>Vult</option>
-            </select>
-
-            <label>Estoque:</label>
-            <input type="number" value="25">
-
-            <label>Modo de Uso:</label>
-            <textarea rows="3">Aplicar nos cílios superiores e inferiores.</textarea>
-
-            <button>Cadastrar</button>
-        </form>
-    </div>
-
-    <!-- PÓ -->
-    <div class="card">
-        <h3>Pó Compacto</h3>
-        <form>
-            <label>Nome do Produto:</label>
-            <input type="text" value="Pó Compacto">
-
-            <label>Preço Médio (R$):</label>
-            <input type="number" value="19.90" step="0.01">
-
-            <label>Marca:</label>
-            <select>
-                <option>Ruby Rose</option>
-                <option>Vult</option>
-                <option>O Boticário</option>
-            </select>
-
-            <label>Estoque:</label>
-            <input type="number" value="30">
-
-            <label>Modo de Uso:</label>
-            <textarea rows="3">Aplicar para selar a maquiagem.</textarea>
-
-            <button>Cadastrar</button>
-        </form>
-    </div>
-
 </body>
 </html>
